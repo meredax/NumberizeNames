@@ -1,0 +1,19 @@
+---
+title: "Introduction to NumberizeNames"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to NumberizeNames}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+To setup
+```{r setup}
+library(NumberizeNames)
+```

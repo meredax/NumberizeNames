@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^NumberizeNames\.Rproj$
+^\.Rproj\.user$
