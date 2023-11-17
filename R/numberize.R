@@ -19,3 +19,22 @@ NumberizeNames <- function(data, colName) {
 }
 
 
+
+#' Count the replicates in the column
+#'
+#' @param data the matrix data that will be used.
+#' @param colName Column name that will be counted the replicates.
+#'
+#' @return
+#' @export
+#'
+#' @examples
+countReplicates <- function (data, colName){
+
+  # Assuming 'grouping_variable' is the variable you want to use for grouping
+  data <- data %>%
+    group_by_at(vars(colName)) %>%
+    mutate(!!colName := row_number())
+
+}
+
